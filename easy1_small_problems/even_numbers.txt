@@ -1,0 +1,43 @@
+# Print all even numbers from 1 to 99, inclusive, with each number on a separate line.
+
+# Bonus Question: Can you solve the problem by iterating over just the even numbers?
+
+
+# Problem
+input: range (1,100)
+output: all even numbers 1-99
+
+requirements:
+print each even number on new line
+follow range1-99
+iterate through a range of numbers, check if even or odd
+skip odd numbers
+rules:
+^^ same as above
+mental model:
+use a for loop to iterate of a range of numbers (1-99).
+check each number if it is even. Print the number if it is even, skip it if odd.
+
+# Examples/text cases
+edge cases + expected output
+must not print: >=0, <=100, non ints,odd numbers
+can print: negatives, even numbers
+
+# data structure
+what will i use to convert input to output:
+for loop
+if else condition
+% operator to check remainder when dividied by 2 == even
+continue : skip odd numbers
+range(1-100)
+
+# algorithm
+for number in range(1,100) # maybe step but would need if condition to skip 1 (?)
+if odd continue  (if not using step to iterate over odd...)
+
+steps to convert input to output:
+make a for loop with range 1,100, test out what happens if we use step 2
+make loop body with conditon to check if odd or even
+odd == continue
+even == print
+# code

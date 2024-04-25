@@ -1,0 +1,41 @@
+# Build a program that asks the user to enter the length and width of a room, 
+# in meters, then prints the room's area in both square meters and square feet.
+
+# Note: 1 square meter == 10.7639 square feet
+
+# Problem
+input:length and width of room (meters)
+output: rooms area in square meters AND square feet
+requirements:
+take in 2 inputs from user
+find area in square metters(L*W)
+find area in sqaure feet == (L * 10.7639) * (W * 10.7639) 
+print out areas (sf and sm)
+
+rules:
+must enter int/float as input
+need 2 inputs (W and L)
+do math to convert meters to feet and find sqaure feet areas
+
+mental model:
+Take in user input as number for size of length and width of room as meters.
+Use length and width to find area. convert meters to ft and find area. Print area results.
+
+# Examples/text cases
+edge cases + expected output
+float, int, non number input
+
+# data structure
+what will i use to convert input to output:
+int(input()) OR float(input) -- prob float but good to test
+ * operator to multiply meter total of L and W to conversion (1 m == 10.7639)
+variables to keep track of area (meters and SF), L and W in Meter and L and W in SF
+print() to return results
+
+# algorithm
+steps to convert input to output:
+take in user input for L and W -- construct to float : store in variables LM WM
+variables LSF WSF to store conversion of L and W to square feet
+multiply L and W (meters and SF) and store results in variable/print
+
+# code

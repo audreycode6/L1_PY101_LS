@@ -1,0 +1,40 @@
+# Print all odd numbers from 1 to 99, inclusive, with each number on a separate line.
+
+# Bonus Question: Can you solve the problem by iterating over just the odd numbers?
+
+# Problem
+input: int --> 1/ no input really since not a function
+output: all odd numbers from 1-99
+
+requirements: 
+skip even numbers, 
+print each number on new line, 
+1-99 (not lower or greater)
+goal to iterate over just odd numbers, if even skip
+
+rules:
+^^ skip even numbers from 1-99
+not necesarily a function but a loop and print
+range: 1-99
+
+mental model:
+loop through a range of numbers from 1-99 and print on a new line each odd number.
+
+# Examples/text cases
+edge cases + expected output
+1 (prints), 99 (p), 0(error), 100 (error), even(continune)/ odd numbers(print), 
+float/list (prob cant happen bc not function)
+
+# data structure
+what will i use to convert input to output:
+for loop with range 1,100
+print statements with \n (new line)
+continue: if even (even == i % 2 =0)
+
+# algorithm
+steps to convert input to output:
+1. make a for loop with range 1,100 (stops before 100 == 99)
+2. body of for loop:
+    condition: if even (i%2==0) continue, else print i
+
+# code

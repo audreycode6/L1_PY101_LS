@@ -1,0 +1,44 @@
+# Write a function that takes one integer argument and returns 
+# True when the number's absolute value is odd, False otherwise.
+
+
+# PEDAC
+# P
+    # input: integer
+    # output: True or False
+
+    # True if absolute value is odd
+    # False if absolute value is not odd AKA even, evenly divisible by 2
+
+    # absolute value: actual magnitude of a numerical value or measurement, 
+        # irrespective of its relation to other values.
+
+    # mental model: need to make a functions that takes in an int arg. 
+        # and body has process to check if odd: odd = int % 2 == 0 
+        # if else conditions for odd vs not
+        # bool return statement for if/else body
+        # call function and test
+
+# E
+    # test odd vs even input, test 0, test empty or more than one arg: 
+    # args: 
+    0 (0) == False  
+    even (28), == False
+    odd (37), == True
+    empty (), == Error, missing arg
+    more than 1 [5,7], == error too many args
+    float input (10.4) == not sure yet (5.0) ==
+# D
+    # python function (clear parameter and error if empty)
+    # if else condition with return statements
+    # using % returns the modulus of a division, not the remainder; As long as both numbers have the same sign, modulo and remainder are equivalent operations;  This distinction differs when precisely one of the two numbers is negative.
+
+    # using arg % 2 returns 0 if even and if ! 0 == odd
+    # for arg can just use int(input()) OR have error message if arg ! int
+# A
+    # define function and parameter
+    # error/ if condition if arg not int
+    # function body: check if odd or even:  arg %2 = 0 == False (not odd)
+    # arg % 2 != 0 == True (is odd, bc is a float when divided by 2)
+    # return statements: True if odd, False if even
+    # dont forget to call function and test
