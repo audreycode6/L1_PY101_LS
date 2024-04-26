@@ -1,0 +1,14 @@
+# Problem
+input:
+output:
+requirements:
+rules:
+mental model:
+
+# Examples/text cases
+edge cases + expected output
+# data structure
+what will i use to convert input to output:
+# algorithm
+steps to convert input to output:
+# code

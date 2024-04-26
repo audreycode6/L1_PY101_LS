@@ -1,0 +1,56 @@
+# Create a simple tip calculator. The program should prompt for a bill amount 
+# and a tip rate. The program must compute the tip, then print both the tip and 
+# the total amount of the bill.
+#  You can ignore input validation and assume that the user will enter valid numbers.
+
+# Problem
+input: 2 args: bill amount- float, tip rate-float
+output: total cost : bill + tip
+
+requirements:
+take in user input: floats (dont need to stress about other types being input)
+find tip amount: tip rate * bill
+look up tip rates format (#%, .#, # ...)
+    should just input a number only no other symbols (%)
+return tip amount + total (bill/tip)
+
+rules:
+print 2 things (tip amount and total bill)
+prompt for input
+compute tip based on bill and tip rate
+
+mental model:
+Make a program that takes in a bill amount and tip rate. 
+It should calculate tip amount aswell as the total bill.
+It returns the tip amount based on the rate
+ as well as the total bill amount (bill and tip combined).
+
+
+# Examples/text cases
+edge cases + expected output
+different tip rates (): less than 0 == no tip, 100, 120, 50, 10
+not enough/ too much args input: >2 args, <2 args
+
+
+# data structure
+what will i use to convert input to output:
+input variables: tip_rate & bill
+function takes in 2 args
+if elif else conditions 
+tip variable: convert tip rate : tip_rate% * bill
+total_bill variable = calc tip + bill
+return tip and total bill in f string
+
+
+# algorithm
+steps to convert input to output:
+ask for user input and store in variables: tip_rate, bill
+define function that takes 2 args: tip_rate and bill
+function body: 
+    tip variable to calc tip_rate% * bill
+    total_bill variable : tip + bill
+return fstring with tip and total bill
+
+
+
+# code

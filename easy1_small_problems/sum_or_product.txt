@@ -1,0 +1,58 @@
+# Write a program that asks the user to enter an integer greater than 0, 
+# then asks whether the user wants to determine the sum or the product of all numbers 
+# between 1 and the entered integer, inclusive.
+
+Ex1:
+Please enter an integer greater than 0: 5
+Enter "s" to compute the sum, or "p" to compute the product. s
+The sum of the integers between 1 and 5 is 15.
+
+Ex2:
+Please enter an integer greater than 0: 6
+Enter "s" to compute the sum, or "p" to compute the product. p
+
+The product of the integers between 1 and 6 is 720.
+
+# Problem
+input: 2 user input: int > 0, sum or product
+output: sum of user int range(1, int+1) OR product of of user int range(1, int+1)
+
+requirements:
+2 user inputs: (int) and (string) 
+check user input to meet requirements int  > 0 AND string == 's' or 'p'
+if else condition: different actions based on string input
+sum function: for num range(1, int+1) num += num
+product function: for num range(1, int+1) num *= num
+
+rules: ^^
+mental model: make a function that takes in 2 user's input: 
+1st a number greater than 0 and next a string identifying,
+if they want 's'the sum of the int they input or 'p' the product of the int they input
+return the final product.
+
+# Examples/text cases
+edge cases + expected output
+0 = error
+big number = 100
+wrong string input ("sum"/"product"/) = error message
+
+
+# data structure
+what will i use to convert input to output:
+int(input()) = to grab first arg
+input() = to grab 2nd arg
+function
+range(1, int+1) to loop through numbers
++= to find sum of 1-int
+*= to find product of 1-int
+f string to return nice format 
+
+# algorithm
+steps to convert input to output:
+store args in variable with input(): number and determine
+define function: 2 args (variables we made of input)
+check string input is correct
+if else condition is s += or p *=
+return fstring answer
+
+# code
