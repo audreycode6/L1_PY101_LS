@@ -1,0 +1,137 @@
+# Write a function that takes any year greater than 0 as input and returns True if the year is 
+# a leap year, or False if it is not.
+
+# For simplicity, this exercise assumes that the Gregorian calendar has been in continuous 
+# use since since the year 1. We'll address that assumption in the next exercise that 
+# follows this one.
+
+# To determine whether a given year is a leap year, use the rules of the Gregorian calendar:
+
+# If the year is divisible by 400, it is a leap year.
+# If the year is divisible by 100 but not by 400, it is not a leap year.
+# If the year is divisible by 4 but not by 100, it is a leap year.
+# All other years are not leap years.
+
+# Problem
+input: int greater than 0
+output: return bool: True or False
+requirements: 
+turn user input to int
+check input int > 0
+compare rules of gregorian cal:
+    If the year is divisible by 400, it is a leap year.
+    If the year is divisible by 100 but not by 400, it is not a leap year.
+    If the year is divisible by 4 but not by 100, it is a leap year.
+    All other years are not leap years.
+
+
+
+rules:
+input year > 0
+If the year is divisible by 400, it is a leap year.
+    If the year is divisible by 100 but not by 400, it is not a leap year.
+    If the year is divisible by 4 but not by 100, it is a leap year.
+    All other years are not leap years.
+return true if meets condition else False
+
+mental model:
+Take in a year input and check if the input year is a leap year: 
+if year % 400 ==  0 --> return T
+if year %  100 == 0 and year % 400 != 0 return T
+if year % 4 == 0 and year % 100 != 0 return T
+else return False
+
+
+# Examples/text cases
+edge cases + expected output
+# divisible by 100 but not 400
+# divisibke by 4 but not 100
+# divisible by 400
+
+
+# data structure
+what will i use to convert input to output:
+int(input())
+% operator to check dividibility conditions
+and operator to check if __ and __ condition meets
+define function and return statement
+
+# algorithm
+steps to convert input to output:
+take user input for year -> construct to int/ store in variable
+check input > 0; not return error
+define function and pass arg of variable
+if, elif, else conditions:
+    if year % 400 ==  0 --> return T
+    if year %  100 == 0 and year % 400 != 0 return T
+    if year % 4 == 0 and year % 100 != 0 return T
+    else return False
+
+
+
+# code
+
+-------------------------------------------------------------------
+leap years 2:
+# In the previous exercise, we assumed that the Gregorian calendar has been in continuous use 
+# since since the year 1. However, the Gregorian calendar wasn't adopted until much later; 
+# prior to that, much of the world used the Julian calendar, which observed leap year every 4 years.
+
+# in 1752, England, Ireland, and the British colonies all switched to the Gregorian calendar.
+# Update the function from the previous exercise so it uses the Julian calendar prior to 1752, 
+# and the Gregorian calendar starting in 1752.
+
+# Problem
+input: year, int
+output: if year is leap year or not 
+requirements:
+if year < 1752 use julian calendar rules (leap year every 4 years) // = year % 4 == 0 return Truwe
+if year >= 1752 use gregorian cal rules (code from last leap_years1)
+
+
+rules:
+arg cant be 0 
+conditions different if >= 1752 or < 1752
+>= 1752 : gregorian (previous conditions)
+ < 1752 : julian (year % 4 == 0)
+if leap year return True
+not leap year return False
+mental model: take in input (int, greater than 0) to represent a year to check if it is leap or not. 
+if year >= 1752 reference gregorian calendar rules to check if leap. 
+if year <1752 reference julian calendar rules if leap.
+if leap return true else false.
+
+
+
+# Examples/text cases
+edge cases + expected output
+years before and after 1752 following either rules
+1752
+
+
+# data structure
+what will i use to convert input to output:
+functions for julian cal and functions or gregorian calendar based on year
+if else conditions to check if leap
+% operator to check divisibility
+
+# algorithm
+steps to convert input to output:
+make is_leap_year function: takes year input, checks if greg or julian and passes it to correct function
+make functions for greg : takes year >= 1752, checks previous conditions
+make fucntion julian ca : takes year < 1752, checks year % 4 == 0 True, else False
+
+make sure all functions work together
+add error messages where needed (year < 0)
+
+# code
+
+Further Exploration
+Different regions adopted the Gregorian calendar at different times. 
+Investigate when it was adopted in various countries and how that transition was managed. 
+Consider how this would impact the leap year calculation and potentially adjust the solution 
+based on the country of reference.
+
+greg
+
+julian

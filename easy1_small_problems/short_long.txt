@@ -1,0 +1,52 @@
+# Write a function that takes two strings as arguments, determines the length of the two strings, 
+# and then returns the result of concatenating the shorter string, the longer string, 
+# and the shorter string once again. You may assume that the strings are of different lengths.
+
+# Problem
+input: 2 args: strings 
+output:return result of concatenating new string: shorterstring + longerS + shorterS
+
+requirements: 
+take in string input
+determine length of 2 strings, 
+identify shorter vs longer
+concatenate string: short + long + short
+
+rules:
+short long short
+mental model:
+Take in input of 2 strings and compare them in length. 
+Return a new string by concatenating the shorter string with longer string and again the shorter string.
+
+
+# Examples/text cases
+edge cases + expected output
+strings same length : could do error message but they said we can ignore
+short strings VS long strings
+strings with multiple words
+strings with symbols: ' " ,!
+strings with multiple spaces
+
+
+# data structure
+what will i use to convert input to output:
+len() to find length of strings
+variables to store string1 and string2
+max() to find longer -- maybe min?
+variables to store longer vs shorter
++ operator to concatenate
+function + return
+
+
+# algorithm
+steps to convert input to output:
+take in user input: 2 string args / store variables
+def short_long-short() function 
+compare length: len
+if > == long_str
+if < == short_str
+concatenate: s + l + s
+return 
+
+
+# code

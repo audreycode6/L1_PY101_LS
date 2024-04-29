@@ -1,0 +1,56 @@
+# Write a function that computes the sum of all numbers between 1 and some other number, inclusive,
+# that are multiples of 3 or 5. For instance, if the supplied number is 20, 
+# the result should be 98 (3 + 5 + 6 + 9 + 10 + 12 + 15 + 18 + 20).
+
+# You may assume that the number passed in is an integer greater than 1.
+
+def multisum():
+    return
+
+# These examples should all print True
+print(multisum(3) == 3)
+print(multisum(5) == 8)
+print(multisum(10) == 33)
+print(multisum(1000) == 234168)
+
+# Problem
+input: 1 int (assumed greater than 1)
+output: sum of all numbers between 1& int that are multip;es of 3 or 5
+requirements:
+int input
+range(1, int+1) put into list form
+loop through list range and list all multiples of 3 or 5 in new list
+find sum of new list (multiples of 3,5 from input int)
+
+rules:
+input int 
+output sum of all multiples of 3 or 5 from range of 1-int
+
+mental model: take input of an int and return sum of all multiples of 3 or 5 from 1-int.
+
+# Examples/text cases
+edge cases + expected output
+0 = error (but dont need to)
+num with no multiple: 1,2,4,6,7,8, 17
+only multiple of 3 (6, 21)
+only multiple of 5 (20, 10)
+both multiples(15, 30)
+
+# data structure
+what will i use to convert input to output:
+% to see if multiples of 3 or 5 == num % 3 == 0 or num % 5 == 0 
+or operand to check if multiple of 3 OR 5
+.append() to make new lists
+range(1, int+1) to loop through 1-num and find multiples
++= to find sum
+
+# algorithm
+steps to convert input to output:
+define function multisum(number) # maybe use int(input) to manually put in arg
+intialize empty list: number_range
+loop through range(1,number+1) and .append to new list: number_range
+intialize empty list: multiples_list
+loop through number_range and check if number multiple of 3 or 5, append to multiples_list
+loop through multiples_list and add each num to itself +=, intialize sum = 0
+return sum!
+# code
