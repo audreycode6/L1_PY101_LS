@@ -1,0 +1,51 @@
+# Create a function that takes 2 arguments, a list and a dictionary. 
+# The list will contain 2 or more elements that, when joined with spaces, 
+# will produce a person's name. The dictionary will contain two keys, "title" and "occupation", 
+# and the appropriate values. Your function should return a greeting that uses the person's 
+# full name, and mentions the person's title.
+
+
+# greeting = greetings(
+#     ["John", "Q", "Doe"],
+#     {"title": "Master", "occupation": "Plumber"},
+# )
+# print(greeting)
+# # Hello, John Q Doe! Nice to have a Master Plumber around.
+
+# Problem
+input: 2 args: list and dict (list contain 2 or + elements) 
+dict (2 keys: title and occupation + appropriate values)
+output: return a greeting using persons full name and title
+requirements:
+2 args: list, dict
+list: 2 + elements for persons full name --> when joined with spaces produce persons name
+dict: 2 keys: title, occupation + appropriate values
+return greeting: using persons full name + title
+rules: 
+need to join list to 1 string: str.join(' ') --> gives full name --> full_name = ['first_name', 'last_name',]
+create dict: {'title' : 'foo', 'occupation': 'bar'}allow input for dict values: 
+return fstring greeting: f"Hi {fullNme}, love that you are a {title} as a {occupation}!"
+
+mental model:
+take in a list of a persons full name aswell as a dict of their title and occupation. 
+return a string greeting using their full name seperated with spaces 
+aswell as mentioning their title from the dict.
+
+# Examples/text cases
+edge cases + expected output
+list input with 2, 2+, >2
+dict input: no title..?
+plurals making sure fstring makes sense
+
+# data structure
+what will i use to convert input to output:
+take in args (list, dict) 
+--> error if missing/incomplete args + figure out how user can input their own info
+combine list arg into 1 string seperated by spaces -> str.join
+figure out index to access title and occupation
+return fstring greeting # Hello, John Q Doe! Nice to have a Master Plumber around.
+
+
+# algorithm
+steps to convert input to output:
+# code

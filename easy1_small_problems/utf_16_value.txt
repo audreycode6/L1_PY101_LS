@@ -1,0 +1,55 @@
+# Write a function that determines and returns the UTF-16 string value of a string passed in 
+# as an argument. The UTF-16 string value is the sum of the UTF-16 values of every character 
+# in the string. (You may use ord to determine the UTF-16 value of a character.)
+
+#  # These examples should all print True
+# print(utf16_value('Four score') == 984)
+# print(utf16_value('Launch School') == 1251)
+# print(utf16_value('a') == 97)
+# print(utf16_value('') == 0)
+
+# # The next three lines demonstrate that the code
+# # works with non-ASCII characters from the UTF-16
+# # character set.
+# OMEGA = "\u03A9"              # UTF-16 character 'Ω' (omega)
+# print(utf16_value(OMEGA) == 937)
+# print(utf16_value(OMEGA + OMEGA + OMEGA) == 2811)
+
+# Problem
+input: string
+output: UTF-16 string value of string arg 
+
+requirements: 
+take in string and calculate value of each char. 
+sum() or +=
+return sum. 
+rules:
+UTF-16 string value is the sum of the UTF-16 values of every character in the string
+mental model: take in a string as input. Translate characters in string to unicode numeric value. 
+Return the sum of all the string's character's numeric value.
+
+# Examples/text cases
+edge cases + expected output
+capital vs lower case strings
+special characters (not just alpha)
+numbers
+empty str
+
+# data structure
+what will i use to convert input to output:
+ord() : calc value of chars
+for loop to loop and get value of each char in str
++= or  sum() to get sum
+
+
+
+# algorithm
+steps to convert input to output:
+get string input
+define function (takes in str)
+check if str is empty before preceeding
+for loop string sum char
+return sum
+
+
+# code
