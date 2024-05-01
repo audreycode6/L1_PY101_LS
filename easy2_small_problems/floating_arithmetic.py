@@ -3,31 +3,24 @@
 # addition, subtraction, product, quotient, floor quotient, remainder, and power.
 # Do not worry about validating the input.
 
-# float input: 2 inputs: postive numbers
-# output: print result of:
-# addition (+), subtraction(-), product(iemultiply: *),quotient (iedivide /), floor quotient(//), remainder (%), power (**)
-# requirments: take in 2 float inputs from user
-# 7 arithmetic: (+, -, *, /, //, %, **)
-# positive float, print error if number 1 or number2 < 0
-# steps
+number1 = float(input('==> Enter a postive number: '))
+number2 = float(input('==> Enter a postive number: '))
+add = number1 + number2
+subtract = number1 - number2
+product = number1 * number2
+quotient = number1 / number2
+floor_quotient = number1 // number2
+remainder = number1 % number2
+power = number1 ** number2
 
-number1 = float(input('Enter a postive number: '))
-number2 = float(input('Enter a postive number: '))
-
-if number1 or number2 >= 0:
-    print() # LEFT OFF HERE!!
-else:
-    print('Error: Numbers entered must be greater than 0')
-
-# EXAMPLES:
-# ==> Enter the first number:
-# 3.141529
-# ==> Enter the second number:
-# 2.718282
-# ==> 3.141529 + 2.718282 = 5.859811
-# ==> 3.141529 - 2.718282 = 0.42324699999999993
-# ==> 3.141529 * 2.718282 = 8.539561733178
-# ==> 3.141529 / 2.718282 = 1.1557038600115808
-# ==> 3.141529 // 2.718282 = 1.0
-# ==> 3.141529 % 2.718282 = 0.42324699999999993
-# ==> 3.141529 ** 2.718282 = 22.45792517468373
+if number1 and number2 >= 0:
+    print(f'==> {number1} + {number2} = {add}')
+    print(f'==> {number1} + {number2} = {subtract}')
+    print(f'==> {number1} + {number2} = {product}')
+    print(f'==> {number1} + {number2} = {quotient}')
+    print(f'==> {number1} + {number2} = {floor_quotient}')
+    print(f'==> {number1} + {number2} = {remainder}')
+    print(f'==> {number1} + {number2} = {power}')
+    
+# else: # OPTIONAL error message
+#     print('Error: Numbers entered must be greater than 0')
