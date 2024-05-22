@@ -6,7 +6,8 @@
 # requirements:
 # 2 args: string, postive int (convert to int and return error if not positve)
 # new line for each printing of string
-# TODO:
+
+# pseudocode:
 # input(string)
 # int(input('Enter a postive number: '))
 # def function repeat(string, int)
@@ -21,5 +22,5 @@ def repeat(string, int):
         print('Error: Enter a postive number!')
     for number in range(int):
         print(string)
-  
+
 repeat(string, int)

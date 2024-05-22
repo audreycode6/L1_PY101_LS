@@ -28,14 +28,7 @@ def crunch(string):
             if string.count(char) > 1:
                 dupe_char = char #hello --> l
                 
-                
-                
-
-                
-    
-
-
-
+  
 print(crunch(string))
 # These examples should all print True
 # print(crunch('ddaaiillyy ddoouubbllee') == 'daily double')

@@ -12,3 +12,14 @@ what will i use to convert input to output:
 # algorithm
 steps to convert input to output:
 # code
+
+
+Pseudocode formal:
+START	start of the program
+SET	set a variable that we can use for later
+GET	retrieve input from user
+PRINT	display output to user
+READ	retrieve a value from a variable
+IF/ELSE IF/ELSE	show conditional branches in logic
+WHILE	show looping logic
+END	end of the program
