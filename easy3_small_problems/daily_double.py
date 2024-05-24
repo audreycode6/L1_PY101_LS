@@ -17,12 +17,12 @@ def remove_duplicate_chars(string):
         for char in string:
             if char != string[next_char]: # if not a dupe add to new string
                 need_final_char += char
-            if next_char == length-1:
+            if next_char == length - 1:
                 no_dupe_string = need_final_char
                 break
             current_char += 1
             next_char += 1
-
+        # check if no_dupe_string's last char is dupe
         if len(no_dupe_string) > 1:
             penultimate_char = no_dupe_string[-2]
             if last_char != penultimate_char:
