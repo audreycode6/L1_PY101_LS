@@ -1,8 +1,8 @@
-'''Write a function that takes a string argument and returns a new string that
-contains the value of the original string with all consecutive duplicate characters
-collapsed into a single character.'''
-
-# string = input('Enter a word or phrase: ')
+'''Write a function that takes a string argument and
+returns a new string that contains the value of the
+original string with all consecutive duplicate 
+characters collapsed into a single character.'''
+# TODO: clean up and use helper functions
 def remove_duplicate_chars(string):
     '''take in string arg and if length of string > 2 
     loop through string and append non dupe chars to a new string'''
@@ -15,7 +15,8 @@ def remove_duplicate_chars(string):
         last_char = string[-1]
 
         for char in string:
-            if char != string[next_char]: # if not a dupe add to new string
+            # if not a dupe add to new string
+            if char != string[next_char]:
                 need_final_char += char
             if next_char == length - 1:
                 no_dupe_string = need_final_char
@@ -31,7 +32,7 @@ def remove_duplicate_chars(string):
         return string[0]
     return string
 
-# print(remove_duplicate_chars(string))
+# TEST
 print(remove_duplicate_chars('ddaaiillyy ddoouubbllee') == 'daily double')
 print(remove_duplicate_chars('4444abcabccba') == '4abcabcba')
 print(remove_duplicate_chars('ggggggggggggggg') == 'g')
