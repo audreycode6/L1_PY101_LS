@@ -14,7 +14,7 @@ def get_century(year):
     if year < 100:
         century_ = 0
     elif year % 100 == 0:
-        century_ = century_ - 1
+        century_ -= 1
     return century_
 
 def get_suffix(century_):
